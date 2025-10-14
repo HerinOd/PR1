@@ -1,7 +1,7 @@
 package tutorial_06.activity2;
 
 public class Car {
-    private double fuelEfficiency;
+    private final double fuelEfficiency;
     private double fuelLevel;
 
     public Car(double fuelEfficiency) {

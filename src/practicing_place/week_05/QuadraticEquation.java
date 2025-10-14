@@ -18,6 +18,7 @@ public class QuadraticEquation {
     public static String solveQuadraticEquation(double a, double b, double c) {
         if (a == 0)
             return solveLinearEquation(b, c);
+
         double discriminant = Math.pow(b, 2) - 4 * a * c;
         if (discriminant == 0)
             return "The equation has one real root: x = " + (-b / (2 * a));
