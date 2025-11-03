@@ -30,6 +30,7 @@ public class ArrayIntersectionDemo {
         }
         System.out.println("Set B: " + setB);
 
+        System.out.println("==================================");
         System.out.println("Set C: " + intersects(setA, setB));
     }
 

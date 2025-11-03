@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BinarySearchDemo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("How many number do you want to enter: ");
+        System.out.print("Enter a number of elements for the sorted array: ");
         int arrayLength = scanner.nextInt();
 
         int[] sortedArray = new int[arrayLength];
