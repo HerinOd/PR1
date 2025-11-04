@@ -15,12 +15,14 @@ public class ThousandSeparatingComma {
                     System.out.println(separateComma(number));
                     inRange = true;
                 }
-                else
+                else {
+                    scanner.nextLine();
                     throw new InputMismatchException();
+                }
             }
             catch (InputMismatchException e) {
                 System.out.println("-----------------------");
-                System.out.println("Error: " + e.getCause());
+                System.out.println("Error: Invalid Input. Please enter a number!");
                 System.out.println("-----------------------");
 
                 System.out.print("Press any key to continue: ");
@@ -30,10 +32,7 @@ public class ThousandSeparatingComma {
     }
 
     public static String separateComma(int integer) {
-        int hundreds = integer % 1000;
-        int thousands = integer / 1000;
-
-        return thousands + "," + hundreds;
+        return String.format("%,d", integer);
     }
 
 }
