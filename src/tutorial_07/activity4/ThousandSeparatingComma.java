@@ -17,9 +17,10 @@ public class ThousandSeparatingComma {
                 }
                 else {
                     scanner.nextLine();
-                    System.out.println("The number must be between 1000 and 999999. Try again!");
+                    System.out.println("-----------------------\nThe number must be between 1000 and 999999. Try again!\n-----------------------");
                     System.out.print("Press any key to continue: ");
                     scanner.nextLine();
+                    System.out.println(" ");
                 }
             }
             catch (InputMismatchException e) {
@@ -30,6 +31,7 @@ public class ThousandSeparatingComma {
 
                 System.out.print("Press any key to continue: ");
                 scanner.nextLine();
+                System.out.println(" ");
             }
         }
     }
